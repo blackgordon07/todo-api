@@ -1,0 +1,57 @@
+POST http://localhost:8000/auth/admin
+Content-Type: application/json
+
+{
+     "username": "JOHN",
+     "email": "johnadanyi@icloud.com",
+     "password": "brandname",
+     "isAdmin": true
+}
+###
+
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+     "username": "gordon",
+     "email": "jighjighadanyi@gmail.com",
+     "password": "typeshit"
+}
+
+####
+
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+     "email": "jighjighadanyi@gmail.com",
+     "password": "typeshit"
+}
+
+
+###
+
+GET http://localhost:8000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWRmYjgxNWIyYTY3YzVhNGM0ZDE0NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTc3MjAzODg1OCwiZXhwIjoxNzcyMDM5NzU4fQ.HXyxBmqsO3BP6qOKbGCzID4gE1E8eg_ToBkYiNLhCpI
+
+###
+
+GET http://localhost:8000/user/69996515f752f117909a8719
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWRmYjgxNWIyYTY3YzVhNGM0ZDE0NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTc3MjAzODg1OCwiZXhwIjoxNzcyMDM5NzU4fQ.HXyxBmqsO3BP6qOKbGCzID4gE1E8eg_ToBkYiNLhCpI
+
+###
+POST http://localhost:8000/task/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWNkMGUxZmY4Yzg1MGE1MDZkN2Q2MSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3NzE5NjI0NTYsImV4cCI6MTc3MTk2MzM1Nn0.-9gvrfTdDoY0rMtQTun9BnckEAiodZbWk7kDHUtGSuc
+
+{
+     "title": "drink water"
+}
+
+###
+GET http://localhost:8000/task?page=1&limit=2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWNkMGUxZmY4Yzg1MGE1MDZkN2Q2MSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3NzIxNTA3NjgsImV4cCI6MTc3MjE1MTY2OH0.GAZSpyRUm8B5ULQ4GPTwGSEoOEe-9VtoIUM4ydFcaxk
+
+###
+PATCH http://localhost:8000/task/699dea906f6a1d478f96cede/toggle
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OWNkMGUxZmY4Yzg1MGE1MDZkN2Q2MSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3NzIxNTA3NjgsImV4cCI6MTc3MjE1MTY2OH0.GAZSpyRUm8B5ULQ4GPTwGSEoOEe-9VtoIUM4ydFcaxk
